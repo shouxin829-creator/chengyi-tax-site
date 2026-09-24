@@ -11,7 +11,7 @@ import {
 export const SITE_URL = "https://chengyi-tax-site.vercel.app";
 
 // Web3Forms 金鑰：到 https://web3forms.com 用 chengyi5828@gmail.com 申請後貼在這裡
-export const WEB3FORMS_ACCESS_KEY = "";
+export const WEB3FORMS_ACCESS_KEY = "1f4a77d6-2ede-45e7-b9d4-bc0c667509b8";
 
 export const site = {
   brand: "誠誼稅務記帳士事務所",
