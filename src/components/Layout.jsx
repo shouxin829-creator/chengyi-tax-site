@@ -12,13 +12,12 @@ export default function Layout() {
       {/* 背景光暈，讓毛玻璃有東西可以透 */}
       <div
         aria-hidden
-        className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(160deg,#f7efe2_0%,#eef1ec_45%,#e8eef5_100%)]"
+        className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(160deg,#fbfaf7_0%,#f5f7fa_50%,#eef3f9_100%)]"
       >
-        <div className="absolute -left-[10%] -top-[15%] h-[70vh] w-[70vh] rounded-full bg-[#e2b765]/55 blur-[100px]" />
-        <div className="absolute -right-[12%] top-[8%] h-[60vh] w-[60vh] rounded-full bg-[#7fa7d8]/45 blur-[100px]" />
-        <div className="absolute left-[30%] top-[45%] h-[55vh] w-[55vh] rounded-full bg-[#6fa58c]/40 blur-[110px]" />
-        <div className="absolute -bottom-[20%] -left-[8%] h-[60vh] w-[60vh] rounded-full bg-[#f0ad8e]/35 blur-[110px]" />
-        <div className="absolute -bottom-[15%] right-[5%] h-[50vh] w-[50vh] rounded-full bg-[#c9a25c]/40 blur-[100px]" />
+        <div className="absolute -left-[8%] -top-[12%] h-[55vh] w-[55vh] rounded-full bg-[#f1dfb8]/40 blur-[110px]" />
+        <div className="absolute -right-[10%] top-[5%] h-[60vh] w-[60vh] rounded-full bg-[#b9d0ee]/45 blur-[110px]" />
+        <div className="absolute left-[35%] top-[48%] h-[50vh] w-[50vh] rounded-full bg-[#c4e0d4]/35 blur-[120px]" />
+        <div className="absolute -bottom-[18%] -left-[6%] h-[55vh] w-[55vh] rounded-full bg-[#c9d8f2]/40 blur-[120px]" />
       </div>
 
       <Header />
