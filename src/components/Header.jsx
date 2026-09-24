@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 px-3 pt-3 sm:px-5">
-      <div className="glass mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-full py-2 pl-4 pr-2 sm:pl-5">
+      <div className="glass-bar mx-auto flex max-w-6xl items-center justify-between gap-4 rounded-full py-2 pl-4 pr-2 sm:pl-5">
         <Link to="/" aria-label={`${site.brand} 首頁`} onClick={() => setOpen(false)}>
           <Logo />
         </Link>
@@ -63,7 +63,7 @@ export default function Header() {
 
       {/* 手機選單 */}
       <div
-        className={`glass mx-auto mt-2 max-w-6xl overflow-hidden rounded-[28px] transition-all duration-300 lg:hidden ${
+        className={`glass-bar mx-auto mt-2 max-w-6xl overflow-hidden rounded-[28px] transition-all duration-300 lg:hidden ${
           open ? "max-h-[520px] opacity-100" : "pointer-events-none max-h-0 opacity-0"
         }`}
       >
