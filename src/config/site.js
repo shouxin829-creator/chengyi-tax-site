@@ -26,7 +26,20 @@ export const site = {
   mapQuery: "台中市西屯區大墩二十街99號",
   hours: "週一至週五 9:00–18:00",
   areas: ["台中", "彰化", "南投", "苗栗"],
+  youtubeUrl: "https://www.youtube.com/@%E8%AA%A0%E8%AA%BC/shorts",
 };
+
+// 首頁「稅務短影音」要放的 YouTube Shorts：id 是網址 /shorts/ 後面那串
+export const videos = [
+  { id: "-F9sKTyDzlg", title: "有發票≠能抵稅！老闆最常搞錯的 3 個進項稅額地雷", tag: "營業稅" },
+  { id: "qv1dT4Q092Y", title: "創業一年內最容易被罰的 6 件事，你中了幾個？", tag: "創業" },
+  { id: "_06fyRHk42c", title: "公司都停業了，還要繳稅？九月暫繳申報的致命盲點", tag: "營所稅" },
+  { id: "aNde75XN6Ko", title: "行號省稅是幻覺？行號 vs 公司「稅務彈性」大解析", tag: "公司設立" },
+  { id: "R_yA79VwRx8", title: "營業稅申報最容易犯的 5 個錯誤，很多老闆年年都在犯", tag: "營業稅" },
+  { id: "3X0p2Y0_i4I", title: "沒做這件事，公司被重罰 3 倍？二代健保代扣地雷", tag: "二代健保" },
+  { id: "YINfW_r2-7s", title: "揭開國稅局電腦勾稽異常的致命代價", tag: "查核" },
+  { id: "9aESa15KhgI", title: "銀行不會告訴你的事：黃金存摺賺錢也要繳稅", tag: "綜所稅" },
+];
 
 export const navigation = [
   { label: "首頁", to: "/" },

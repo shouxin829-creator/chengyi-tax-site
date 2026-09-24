@@ -12,6 +12,7 @@ import {
 import { faqs, services, site } from "../config/site";
 import { SectionHeading } from "../components/Section";
 import ContactSection from "../components/ContactSection";
+import VideoSection from "../components/VideoSection";
 import { usePageMeta } from "../hooks/usePageMeta";
 
 const stats = [
@@ -206,8 +207,10 @@ export default function Home() {
         </div>
       </section>
 
+      <VideoSection />
+
       {/* 稅務行事曆 */}
-      <section className="mx-auto max-w-6xl px-5 py-20">
+      <section className="mx-auto max-w-6xl px-5 pb-20">
         <SectionHeading
           eyebrow="TAX CALENDAR"
           title="重要申報期限，我們替您記著"

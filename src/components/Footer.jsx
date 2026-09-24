@@ -39,6 +39,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href={site.youtubeUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                  YouTube 稅務短影音
+                </a>
+              </li>
+              <li>
                 <a href={`mailto:${site.email}`} className="break-all hover:text-white">{site.email}</a>
               </li>
               <li>{site.address}</li>
