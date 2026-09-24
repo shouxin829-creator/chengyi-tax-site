@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 
 // 網站正式網址：買自訂網域後，這裡和 index.html、public/sitemap.xml、public/robots.txt 都要一起改
-export const SITE_URL = "https://chengyi-tax.vercel.app";
+export const SITE_URL = "https://chengyi-tax-site.vercel.app";
 
 // Web3Forms 金鑰：到 https://web3forms.com 用 chengyi5828@gmail.com 申請後貼在這裡
 export const WEB3FORMS_ACCESS_KEY = "";
