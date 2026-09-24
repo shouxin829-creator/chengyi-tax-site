@@ -2,11 +2,11 @@
 
 @theme {
   --color-ink: #0e2742;
-  --color-ink-soft: #5b6b7c;
+  --color-ink-soft: #46566a;
   --color-gold: #a8823f;
   --color-gold-light: #dcc08a;
   --color-sage: #4e7466;
-  --color-canvas: #f5f3ee;
+  --color-canvas: #fbfbfb;
   --font-sans:
     -apple-system, BlinkMacSystemFont, "SF Pro TC", "PingFang TC",
     "Noto Sans TC", "Microsoft JhengHei", "Segoe UI", sans-serif;

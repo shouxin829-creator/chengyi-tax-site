@@ -4,7 +4,7 @@ import { services, site, WEB3FORMS_ACCESS_KEY } from "../config/site";
 import { SectionHeading } from "./Section";
 
 const field =
-  "w-full rounded-2xl border border-white/80 bg-white/70 px-4 py-3.5 text-[15px] outline-none transition placeholder:text-ink-soft/60 focus:border-gold/50 focus:bg-white focus:ring-4 focus:ring-gold/10";
+  "w-full rounded-2xl border border-white/80 bg-white/70 px-4 py-3.5 text-[15px] outline-none transition placeholder:text-ink-soft/60 focus:border-ink/30 focus:bg-white focus:ring-4 focus:ring-ink/5";
 
 export default function ContactSection() {
   const [status, setStatus] = useState("idle");
@@ -121,16 +121,16 @@ export default function ContactSection() {
             <ul className="space-y-4">
               {contacts.map(({ icon: Icon, label, value, href, external }) => (
                 <li key={label} className="flex items-start gap-4">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-white/80 text-gold">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-white/80 text-ink">
                     <Icon size={18} />
                   </span>
                   <span className="min-w-0">
-                    <span className="block text-xs font-semibold text-ink-soft">{label}</span>
+                    <span className="block text-[13px] font-semibold text-ink-soft">{label}</span>
                     {href ? (
                       <a
                         href={href}
                         {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-                        className="block break-all font-semibold hover:text-gold"
+                        className="block break-all font-semibold hover:underline"
                       >
                         {value}
                       </a>

@@ -45,13 +45,13 @@ export default function Services() {
                 <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#c9a25c] to-[#9a7434] text-white shadow-md">
                   <Icon size={22} />
                 </span>
-                <span className="text-sm font-bold text-gold">0{i + 1}</span>
+                <span className="text-sm font-bold text-ink-soft">0{i + 1}</span>
               </div>
               <h2 className="mt-6 text-2xl font-bold tracking-tight sm:text-3xl">{title}</h2>
               <p className="mt-4 leading-8 text-ink-soft">{desc}</p>
               <Link
                 to="/#contact"
-                className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-gold"
+                className="mt-6 inline-flex items-center gap-1.5 font-semibold text-ink underline-offset-4 hover:underline"
               >
                 諮詢這項服務 <ArrowRight size={15} />
               </Link>

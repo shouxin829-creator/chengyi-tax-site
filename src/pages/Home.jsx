@@ -105,7 +105,7 @@ export default function Home() {
           </div>
           <div className="glass absolute -bottom-6 left-4 rounded-3xl px-5 py-4 sm:-left-6">
             <p className="text-3xl font-bold tracking-tight">
-              25<span className="text-gold">+</span>
+              25+
             </p>
             <p className="text-xs font-semibold text-ink-soft">年稅務實務經驗</p>
           </div>
@@ -122,7 +122,7 @@ export default function Home() {
           {stats.map((s) => (
             <div key={s.label} className="px-3 text-center">
               <p className="text-2xl font-bold tracking-tight sm:text-3xl">{s.value}</p>
-              <p className="mt-1 text-xs text-ink-soft sm:text-sm">{s.label}</p>
+              <p className="mt-1 text-[13px] text-ink-soft sm:text-[15px]">{s.label}</p>
             </div>
           ))}
         </div>
@@ -146,8 +146,8 @@ export default function Home() {
                 <Icon size={22} />
               </span>
               <h3 className="mt-6 text-lg font-bold">{title}</h3>
-              <p className="mt-2 flex-1 text-[15px] leading-7 text-ink-soft">{short}</p>
-              <span className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-gold">
+              <p className="mt-2 flex-1 text-base leading-7 text-ink-soft">{short}</p>
+              <span className="mt-5 inline-flex items-center gap-1 text-[15px] font-semibold text-ink">
                 了解內容
                 <ArrowRight size={15} className="transition group-hover:translate-x-1" />
               </span>
@@ -159,16 +159,16 @@ export default function Home() {
       {/* 為什麼選擇誠誼 */}
       <section className="mx-auto max-w-6xl px-5">
         <div className="glass-dark relative overflow-hidden rounded-[36px] px-7 py-12 text-white sm:px-12 sm:py-16">
-          <div aria-hidden className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-gold/30 blur-[90px]" />
+          <div aria-hidden className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#7fa7d8]/20 blur-[90px]" />
           <div className="relative grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
-              <p className="text-xs font-semibold tracking-[0.22em] text-gold-light">WHY CHENG YI</p>
+              <p className="text-[13px] font-semibold tracking-[0.22em] text-gold-light">WHY CHENG YI</p>
               <h2 className="mt-3 text-3xl font-bold leading-snug tracking-tight sm:text-4xl">
                 懂申報，
                 <br />
                 更懂查核的角度。
               </h2>
-              <p className="mt-5 leading-8 text-white/70">
+              <p className="mt-5 leading-8 text-white/80">
                 由具逾 25 年實務經驗之記帳士主持，歷練涵蓋銀行財富管理、保險、國稅局職務代理人及記帳士事務所，熟悉稅務申報邏輯與查核實務。
               </p>
               <Link
@@ -187,7 +187,7 @@ export default function Home() {
                   </span>
                   <div>
                     <p className="font-semibold">{title}</p>
-                    <p className="mt-1 text-sm leading-6 text-white/65">{desc}</p>
+                    <p className="mt-1 text-[15px] leading-7 text-white/80">{desc}</p>
                   </div>
                 </div>
               ))}
@@ -197,7 +197,7 @@ export default function Home() {
                 </span>
                 <div>
                   <p className="font-semibold">跨專業協作</p>
-                  <p className="mt-1 text-sm leading-6 text-white/65">
+                  <p className="mt-1 text-[15px] leading-7 text-white/80">
                     與{partners.join("、")}建立協作機制，處理企業稅務、資產傳承及複雜稅務案件。
                   </p>
                 </div>
@@ -223,7 +223,7 @@ export default function Home() {
                 <CalendarClock size={13} /> {c.month}
               </span>
               <p className="mt-4 text-lg font-bold">{c.title}</p>
-              <p className="mt-1.5 text-sm leading-6 text-ink-soft">{c.desc}</p>
+              <p className="mt-1.5 text-[15px] leading-7 text-ink-soft">{c.desc}</p>
             </div>
           ))}
         </div>
@@ -235,9 +235,9 @@ export default function Home() {
         <ol className="mt-10 grid gap-4 md:grid-cols-4">
           {steps.map((s) => (
             <li key={s.no} className="glass rounded-[28px] p-6">
-              <p className="text-sm font-bold text-gold">{s.no}</p>
+              <p className="text-sm font-bold text-ink-soft">{s.no}</p>
               <p className="mt-3 text-lg font-bold">{s.title}</p>
-              <p className="mt-1.5 text-sm leading-6 text-ink-soft">{s.desc}</p>
+              <p className="mt-1.5 text-[15px] leading-7 text-ink-soft">{s.desc}</p>
             </li>
           ))}
         </ol>
@@ -247,7 +247,7 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 pt-20">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <SectionHeading eyebrow="FAQ" title="常見問題" />
-          <Link to="/faq" className="inline-flex items-center gap-1 font-semibold text-gold">
+          <Link to="/faq" className="inline-flex items-center gap-1 font-semibold text-ink">
             看全部問題 <ArrowRight size={16} />
           </Link>
         </div>
@@ -256,7 +256,7 @@ export default function Home() {
             <details key={f.q} className="glass group rounded-3xl px-6 py-5">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
                 {f.q}
-                <span className="text-xl text-gold transition group-open:rotate-45">+</span>
+                <span className="text-xl text-ink-soft transition group-open:rotate-45">+</span>
               </summary>
               <p className="mt-3 leading-7 text-ink-soft">{f.a}</p>
             </details>

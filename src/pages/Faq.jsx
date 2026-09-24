@@ -41,7 +41,7 @@ export default function Faq() {
           <details key={f.q} open={i === 0} className="glass group rounded-3xl px-6 py-5 sm:px-8">
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold">
               {f.q}
-              <span className="text-2xl text-gold transition group-open:rotate-45">+</span>
+              <span className="text-2xl text-ink-soft transition group-open:rotate-45">+</span>
             </summary>
             <p className="mt-3 leading-8 text-ink-soft">{f.a}</p>
           </details>

@@ -39,10 +39,10 @@ function VideoCard({ id, title, tag }) {
         )}
       </div>
       <div className="px-2.5 pb-2.5 pt-3">
-        <span className="rounded-full bg-gold/10 px-2.5 py-0.5 text-[11px] font-semibold text-gold">
+        <span className="rounded-full bg-ink/[0.06] px-2.5 py-0.5 text-xs font-semibold text-ink-soft">
           {tag}
         </span>
-        <h3 className="mt-2 line-clamp-2 text-sm font-semibold leading-6">{title}</h3>
+        <h3 className="mt-2 line-clamp-2 text-[15px] font-semibold leading-6">{title}</h3>
       </div>
     </article>
   );
@@ -61,7 +61,7 @@ export default function VideoSection() {
           href={site.youtubeUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden items-center gap-1 font-semibold text-gold sm:inline-flex"
+          className="hidden items-center gap-1 font-semibold text-ink sm:inline-flex"
         >
           前往 YouTube 頻道 <ArrowRight size={16} />
         </a>

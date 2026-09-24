@@ -49,7 +49,7 @@ export default function About() {
           />
         </div>
         <div className="glass flex flex-col justify-center rounded-[32px] p-7 sm:p-10">
-          <p className="text-xs font-semibold tracking-[0.22em] text-gold">主持記帳士</p>
+          <p className="text-[13px] font-semibold tracking-[0.22em] text-gold">主持記帳士</p>
           <h2 className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">
             25 年以上的稅務實務歷練
           </h2>
@@ -59,12 +59,12 @@ export default function About() {
           <ul className="mt-6 space-y-3">
             {background.map(({ icon: Icon, title, desc }) => (
               <li key={title} className="flex gap-4 rounded-2xl bg-white/60 p-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-gold">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-ink/[0.06] text-ink">
                   <Icon size={19} />
                 </span>
                 <div>
                   <p className="font-semibold">{title}</p>
-                  <p className="mt-0.5 text-sm leading-6 text-ink-soft">{desc}</p>
+                  <p className="mt-0.5 text-[15px] leading-7 text-ink-soft">{desc}</p>
                 </div>
               </li>
             ))}
@@ -77,7 +77,7 @@ export default function About() {
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {values.map((v) => (
             <div key={v.title} className="glass rounded-[28px] p-7">
-              <p className="bg-gradient-to-br from-[#c9a25c] to-[#9a7434] bg-clip-text text-5xl font-bold text-transparent">
+              <p className="text-5xl font-bold text-ink">
                 {v.title}
               </p>
               <p className="mt-4 leading-7 text-ink-soft">{v.desc}</p>
@@ -89,7 +89,7 @@ export default function About() {
       <section className="mx-auto max-w-6xl px-5 pb-14">
         <div className="glass rounded-[32px] p-7 sm:p-10">
           <div className="flex items-center gap-3">
-            <Handshake className="text-gold" />
+            <Handshake className="text-ink" />
             <h2 className="text-2xl font-bold tracking-tight">跨專業協作</h2>
           </div>
           <p className="mt-3 max-w-2xl leading-8 text-ink-soft">
@@ -99,7 +99,7 @@ export default function About() {
             {partners.map((p) => (
               <div key={p.title} className="rounded-2xl bg-white/60 p-5">
                 <p className="text-lg font-bold">{p.title}</p>
-                <p className="mt-1 text-sm text-ink-soft">{p.desc}</p>
+                <p className="mt-1 text-[15px] leading-7 text-ink-soft">{p.desc}</p>
               </div>
             ))}
           </div>
@@ -109,7 +109,7 @@ export default function About() {
       <section className="mx-auto max-w-6xl px-5 pb-14">
         <div className="glass grid gap-6 rounded-[32px] p-7 sm:grid-cols-2 sm:p-10">
           <div className="flex gap-4">
-            <MapPin className="shrink-0 text-gold" />
+            <MapPin className="shrink-0 text-ink" />
             <div>
               <h2 className="font-bold">服務地區</h2>
               <p className="mt-1 leading-7 text-ink-soft">
@@ -118,7 +118,7 @@ export default function About() {
             </div>
           </div>
           <div className="flex gap-4">
-            <Clock className="shrink-0 text-gold" />
+            <Clock className="shrink-0 text-ink" />
             <div>
               <h2 className="font-bold">營業時間</h2>
               <p className="mt-1 leading-7 text-ink-soft">
